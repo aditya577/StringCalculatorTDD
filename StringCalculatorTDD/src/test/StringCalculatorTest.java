@@ -30,6 +30,9 @@ class StringCalculatorTest {
 		assertEquals(1+2+3+4+5+6+7,cal.add("1,2,3,4,5,6,7"));
 	}
 	
-	
+	@Test
+	void whenNumbersArePassedSeparatedByCommaOrNewLineThenReturnTheirSum() {
+		assertEquals(1+2+3+4,cal.add("1,2\n3,4"));
+	}
 	
 }
