@@ -32,7 +32,12 @@ class StringCalculatorTest {
 	
 	@Test
 	void whenNumbersArePassedSeparatedByCommaOrNewLineThenReturnTheirSum() {
-		assertEquals(1+2+3+4,cal.add("1,2\n3,4"));
+		assertEquals(1+2+3+4+5,cal.add("1,2\n3,4,5"));
+	}
+	
+	@Test
+	void whenNumbersArePassedWithDifferentDelimiters() {
+		assertEquals(1+2+3,cal.add("//;\\n1;2"));
 	}
 	
 }
