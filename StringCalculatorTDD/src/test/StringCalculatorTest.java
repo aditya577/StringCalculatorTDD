@@ -17,7 +17,7 @@ class StringCalculatorTest {
 	
 	@Test
 	void whenOneNumberIsPassedThenReturnSameAsSum() {
-		assertEquals("1",cal.add("1"));
+		assertEquals(1,cal.add("1"));
 	}
 
 }

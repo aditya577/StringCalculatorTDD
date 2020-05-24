@@ -3,25 +3,16 @@ package main;
 public class StringCalculator {
 
 	public int add(String str) {
-		int sum;
+		int sum =0;
 		
 		if(str.equals(""))
 			sum = 0;
 		
 		else {
-			
-			String[] numArray = str.split(",");
-			
-			int temp =0;
-			for(String num : numArray)
-			{
-				temp += Integer.parseInt(num);
-			}
-			sum = temp;
-			
+			int num = Integer.parseInt(str);
+			sum = num;
 		}
 		
-		System.out.println("sum:"+sum);
 		return sum;
 	}
 
