@@ -21,13 +21,15 @@ class StringCalculatorTest {
 	}
 	
 	@Test
-	void whenTwoNumbersArePassedSeparatedByCommaThenReturnSameAsSum() {
+	void whenTwoNumbersArePassedSeparatedByCommaThenReturnTheirSum() {
 		assertEquals(1+2,cal.add("1,2"));
 	}
 
 	@Test
-	void whenManyNumbersArePassedSeparatedByCommaThenReturnSameAsSum() {
+	void whenManyNumbersArePassedSeparatedByCommaThenReturnTheirSum() {
 		assertEquals(1+2+3+4+5+6+7,cal.add("1,2,3,4,5,6,7"));
 	}
+	
+	
 	
 }
