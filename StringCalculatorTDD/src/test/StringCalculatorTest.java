@@ -8,11 +8,16 @@ import main.StringCalculator;
 
 class StringCalculatorTest {
 
+	final StringCalculator cal= new StringCalculator();
+	
 	@Test
 	void whenEmptyStringIsPassedThenReturn0AsSum() {
-		StringCalculator cal= new StringCalculator();
 		assertEquals(0,cal.add(""));
-		
+	}
+	
+	@Test
+	void whenOneNumberIsPassedThenReturnSameAsSum() {
+		assertEquals("1",cal.add("1"));
 	}
 
 }
